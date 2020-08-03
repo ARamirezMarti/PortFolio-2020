@@ -1,0 +1,55 @@
+
+
+
+<div class="frame">
+    <div class="content">
+        <img class="fondo" src="../../../assets//frame.jpg" >
+        <img class="photo" src=" ../../../assets//monigote.png">        
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li id="logo">AR</li>
+            <!-- TODO descipcion de mi-->
+            <li> <a [routerLink]="['']"
+                routerLinkActive="router-link-active">Home</a>                   
+            </li>
+
+            <!-- TODO POoner mi estudios-->
+            <li >  <a [routerLink]="['skills']"
+            routerLinkActive="router-link-active">Skills</a>  
+            </li>
+
+            <!-- TODO  POoner mi  experiencia-->
+            <li>
+                <a [routerLink]="['experience']"
+            routerLinkActive="router-link-active">Experience</a> 
+             </li>
+
+            <!-- TODO  POoner mis  proyectos-->
+            <li>
+                <a [routerLink]="['projects']"
+            routerLinkActive="router-link-active">My projects </a>  
+                
+            </li>
+
+            <!-- TODO  Form para contactarme-->
+            <li>
+                <a [routerLink]="['contact']"
+            routerLinkActive="router-link-active">Contact me </a>   
+            </li>
+
+        </ul>
+        <hr>
+    </nav>
+    
+
+    <div class="container">
+
+        <router-outlet></router-outlet>
+    
+    </div>
+    
+</div>
+
+

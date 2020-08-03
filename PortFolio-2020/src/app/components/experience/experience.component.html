@@ -1,0 +1,22 @@
+
+<div class="divContent">
+
+    <button class="accordion" (click)=showDiv(1) >Section 1</button>
+    <div class="panel" *ngIf="isShown1">
+      <p>Contenido seccion 1 </p>
+      
+    </div>
+    
+    <button class="accordion" (click)=showDiv(2) >Section 2</button>
+    <div class="panel" *ngIf="isShown2">
+      <p> contenido seccion 2</p>
+    </div>
+    
+    <button class="accordion"  (click)=showDiv(3) >Section 3</button>
+    <div class="panel" *ngIf="isShown3">
+      <p>contenido seccion3</p>
+    </div>
+
+    
+
+</div>

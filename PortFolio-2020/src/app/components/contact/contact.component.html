@@ -1,0 +1,28 @@
+
+<div class="form">
+
+    <form  #formFilled="ngForm" (ngSubmit)="onSubmit(formFilled)">
+        <label for="name"> Name</label>
+        <input type="text" name="name" [(ngModel)]="formulario.name" placeholder="name" required>
+
+        <label for="company"> Company</label>
+        <input type="text" name="company" placeholder="company" [(ngModel)]="formulario.company" required>
+
+        <label for="email"> Contact Email </label>
+        <input type="text" name="email" placeholder="email" [(ngModel)]="formulario.email" required>
+
+        <label for="phone"> Telephone</label>
+        <input type="" name="phone" [(ngModel)]="formulario.telephone"  required>
+
+        <button type="submit" [disabled]="!formFilled.valid">
+            Submit
+        </button>
+        
+        
+    </form>
+    
+    <img class="photo2" src="../../../assets//seeyou.jpg">
+
+
+</div>
+
