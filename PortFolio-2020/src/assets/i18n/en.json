@@ -1,0 +1,16 @@
+
+{
+    "menu":{
+        "home":" Home",
+        "skills":" Skills",
+        "experience":"Experience",
+        "Projects":"Projects",
+        "Contact": "Contact"
+    },
+    "home":{
+        "title":"Ey there! I'm tony!",
+        "content": "  INGLES INGLES INGLES INGLES INGLES INGLES"
+    }
+
+
+}
