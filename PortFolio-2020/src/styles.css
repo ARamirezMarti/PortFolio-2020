@@ -2,122 +2,123 @@
     font-family:'handy';
     src: url('./assets/fonts/handy.ttf');
 }
-@font-face{
-    font-family:'finger';
-    src: url('./assets/fonts/finger.ttf');
-}
 
 body{
-    background-color:white;
+    background-color:rgba(3, 3, 3, 0.622);
+    overflow: auto;
 }
-content{ position: relative;}
-.frame .fondo{
+.photo{
     margin:0px auto;
     float: left;
-    margin-left: 1%;
-    width: 98%;
-    height: 300px;
-    opacity: 0.9;
-    border-radius: 5%;
-   
+    background-color: rgb(53, 135, 243);
+    width: 48%;
+    height: 690px;
+    left: 0%;
+    position: fixed;
+    
 }
-.frame .photo{
-  
-    border: 3px solid black;
+
+/* /////////////////// LOGO ////////////////*/
+.divLogo{
     position: absolute;
-    width: 250px;
-    height: 250px;
-    top:30%;
-    left: 77%;
-    border-radius: 50%; 
+    margin: 0px auto;
+    margin-top: 4px;
+    float: left;
+    margin-left: 49%;
+}
+.divLogo img{
+    width: 100px;
+    height: 100px;
 
 }
+
+/* /////////////////// MENU ////////////////*/
 .menu{    
     margin:0px auto;
-    float: left;
-    margin-left: 2%;
-    margin-top: 8px;
-    width: 70%;
-
+    float: left;  
+    margin-left: 50%;  
+    margin-top: 1rem;
+    width: 49%;
+    height: auto;
+    color: white;
+    text-align: center;
 
 }
 .menu ul{
-    text-align: center;
+    
     display: inline-block;
-    width: 95%;
+    width: 100% auto;
+    text-align: center;
+    
+}
 
-    
-}
-.menu  #logo{
-    margin-top: 30px;
-    border-radius: 80%;
-    margin-right:20px ;
-    font-size: 60px;
-    color: white;
-    background-color: rgba(98, 240, 62, 0.815);
-    
-}
-.menu li{
-   
-    display: inline;   
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size:30px;
-    padding: 1%;
-    border-radius: 20%;
-    font-family: handy;
+.menu li{  
+    margin:0px auto;
+    float: left;
+    display: inline;     
+    font-size:17px;
+    margin-right: 3rem;      
     transition: background-color 1.5s;
+    font-family: finger;border-bottom: 1px dashed white;
 
 }
-.menu li:hover{
+.menu li img{
+    width: 40px;
+    height: 40px;
+}
+.menuText{
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
     
-    display: inline;   
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size:30px;
-    border-radius: 20%;
-    font-family: handy;
-    background-color: rgba(98, 240, 62, 0.726);
-    color: white;
+    
+    
+}
+.menu li:hover .menuText{
+    visibility: visible;
 }
 
-.menu li a{
-    color: inherit;  
-    text-decoration: none;
-  
-}
-
+/* /////////////////// CONTENEDOR ////////////////*/
 .container{
  
     margin: 0px auto;
-    margin-top: 2%;
-    margin-left: 3%;
-    background-color:white;
+    margin-top: 1%;
+    margin-left: 50%;
+    background-color:rgba(3, 3, 3, 0.068);
     float: left;
-    width: 80%;
+    width: 48%;
     margin-bottom: 50px;    
     padding-bottom: 3%;
     box-shadow: 0px 5px 5px 10px  rgba(0, 0, 0, 0.144);
+    color: white;
     
 }
 
 .titulos{
     margin-left: 20px;
     margin-top: 20px;
-    color:rgba(98, 240, 62, 0.904);
-    font-family: finger;
+    color:rgb(53, 135, 243);
+    font-family: bold;
     font-size: 50px;
     
 }
 .divContent{
     margin-left: 15px;
-    margin-right: 25px;
-    margin-bottom: 150px;
-    text-align: center;
-    font-family: finger;
-    font-size: large;
+    margin-right: 25px;  
     
-
+    font-family: finger;
+    font-size: medium;  
+}
+.divContent button{
+    color: white;
+    background-color:rgba(3, 3, 3, 0.068);
 }
 
 /* Experience */
@@ -128,23 +129,24 @@ content{ position: relative;}
   cursor: pointer;
   padding: 10px;
   width: 95%;
-  font-size: large;
-  text-align: left;
+  font-size: medium;
   border: none;
   outline: none;
   font-family: cursive;
   transition: 0.4s;
+  text-align: center;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .accordion:hover {
-  background-color:rgba(98, 240, 62, 0.904);
+  background-color:rgba(0, 0, 0, 0.281);
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
+  width: 85%;
   padding: 0 18px;
-  background-color: white;
+  background-color:rgba(0, 0, 0, 0.281);
 }
 
 
@@ -158,11 +160,11 @@ content{ position: relative;}
     padding:2%;
 }
 
-.form input, label {
+.form input, label,textarea {
     display:block;
     margin-left: 10px;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 15px;
+    margin-top: 15px;
     width:75%;
 
 }
@@ -175,11 +177,19 @@ content{ position: relative;}
 .photo2{
     
     position: absolute;
-    width: 400px;
-    height: 350px;
-    top:80%;
-    left: 45%;
+    margin:0px auto;
+    float: right;
+    width: 200px;
+    height: 250px;
+    
+    
    
+}
+.pass{
+    font-size: 25px;
+    color:red;
+    font-family: finger;
+    margin-left: 2%;
 }
 
 
@@ -191,7 +201,9 @@ content{ position: relative;}
     width: 45%;
     float: left;
     margin-left:2%;
-    height: 600px;
+    border: 1px solid red;
+    
+    
 }
 
 .progresBars{
@@ -201,8 +213,10 @@ content{ position: relative;}
     margin-right: 2%;
     border-left: 5px dashed black;
     width: 45%;
-    height: 600px;
+    padding-bottom: 1%;    
     padding-left: 3%;
+    border: 1px solid red;
+
 
 
 }
@@ -215,7 +229,7 @@ content{ position: relative;}
     margin-top: 10px;
 }
 .percentBar{
-    background-color: rgba(98, 240, 62, 0.904); 
+    background-color:rgb(53, 135, 243); 
     color: white; 
     padding: 1%; 
     text-align: right; 
@@ -227,4 +241,42 @@ content{ position: relative;}
 .liCertificates{
     margin-left: 10px;
     font-size: small;
+}
+
+
+/*  PROJECTS */
+
+
+.project{
+    width:75%;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.divImages{
+    width: 40%;
+    height: 40%; 
+    overflow: hidden;
+    float: left;
+
+}
+
+.description{
+    text-align: left;
+    margin-left: 2%;
+    width: 40%;
+    height: 40%;
+    float: left;
+    
+}
+
+.divImages img{
+    float: left;    
+    width: 100%;
+    height: 100%;
 }

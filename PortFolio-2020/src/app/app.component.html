@@ -2,45 +2,52 @@
 
 
 <div class="frame">
-    <div class="content">
-        <img class="fondo" src="../../../assets//frame.jpg" >
-        <img class="photo" src=" ../../../assets//monigote.png">        
-    </div>
-
+   <img class="photo" src="../assets//leftphoto.jpeg">
+   <div class="divLogo"> <img class="logo" src="../assets//icons//logo.png" alt=""> </div>   
     <nav class="menu">
+
         <ul>
-            <li id="logo">AR</li>
+            
+            
+           
             <!-- TODO descipcion de mi-->
-            <li> <a [routerLink]="['']"
-                routerLinkActive="router-link-active">Home</a>                   
+            <li class="liText"> <a [routerLink]="['']"
+                routerLinkActive="router-link-active"><img src="../assets/icons//home.png" alt=""></a>                   
+                <span class="menuText">Home</span>
             </li>
 
             <!-- TODO POoner mi estudios-->
-            <li >  <a [routerLink]="['skills']"
-            routerLinkActive="router-link-active">Skills</a>  
-            </li>
+            <li >
+            <a [routerLink]="['skills']"
+            routerLinkActive="router-link-active">
+            <img src="../assets//icons//skills.png" alt=""> </a>  
+            <span class="menuText">Skills</span>   
+             </li>
 
             <!-- TODO  POoner mi  experiencia-->
             <li>
-                <a [routerLink]="['experience']"
-            routerLinkActive="router-link-active">Experience</a> 
-             </li>
+            <a [routerLink]="['experience']"
+            routerLinkActive="router-link-active"><img src="../assets//icons//experience.png" alt=""> </a> 
+            <span class="menuText">Experience</span> 
+            </li>
 
             <!-- TODO  POoner mis  proyectos-->
             <li>
                 <a [routerLink]="['projects']"
-            routerLinkActive="router-link-active">My projects </a>  
-                
+            routerLinkActive="router-link-active"><img src="../assets//icons//projects.png" alt=""></a>  
+            <span class="menuText">Projects</span> 
+  
             </li>
 
             <!-- TODO  Form para contactarme-->
             <li>
                 <a [routerLink]="['contact']"
-            routerLinkActive="router-link-active">Contact me </a>   
-            </li>
+            routerLinkActive="router-link-active"><img src="../assets//icons//contact.png" alt=""> </a>   
+            <span class="menuText">Contact</span> 
+           </li>
 
         </ul>
-        <hr>
+       
     </nav>
     
 

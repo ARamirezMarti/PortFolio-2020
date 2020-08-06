@@ -11,8 +11,10 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 
-import {ProjectService} from '../app/services/project.service'
+import {ProjectService} from '../app/services/project.service';
+import {FormService } from '../app/services/form.service';
 import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,8 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule
   ],
   providers: [
-    ProjectService
+    ProjectService,
+    FormService
   ],
   bootstrap: [AppComponent]
 })

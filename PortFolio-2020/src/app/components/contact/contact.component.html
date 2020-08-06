@@ -1,6 +1,6 @@
 
 <div class="form">
-
+    <p class="pass"> <strong> {{msg}}</strong></p>
     <form  #formFilled="ngForm" (ngSubmit)="onSubmit(formFilled)">
         <label for="name"> Name</label>
         <input type="text" name="name" [(ngModel)]="formulario.name" placeholder="name" required>
@@ -12,16 +12,18 @@
         <input type="text" name="email" placeholder="email" [(ngModel)]="formulario.email" required>
 
         <label for="phone"> Telephone</label>
-        <input type="" name="phone" [(ngModel)]="formulario.telephone"  required>
+        <input type="text" name="phone" [(ngModel)]="formulario.telephone"  required>
+
+        <label for="message"> Message</label>
+        <textarea type="textarea" name="message" [(ngModel)]="formulario.message"  required></textarea>
 
         <button type="submit" [disabled]="!formFilled.valid">
-            Submit
+            Send
         </button>
         
         
     </form>
-    
-    <img class="photo2" src="../../../assets//seeyou.jpg">
+  
 
 
 </div>

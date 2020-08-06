@@ -11,7 +11,7 @@ let app = express();
 app.use(cors({
     origin:true,
     methods:["GET","PUT","POST","DELETE"],
-    allowedHeaders:['Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method']
+    allowedHeaders:['Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method','text/plain']
 }));
 app.use(morgan('tiny'));
 

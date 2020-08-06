@@ -10,13 +10,16 @@ import {Project} from '../../models/project';
 })
 export class ProjectsComponent implements OnInit {
   public projects: Project[];
+  public url: string;
 
   constructor( private _projectService:ProjectService) { 
    
+    this.url='http://localhost:3500/api/'
   }
 
   ngOnInit(): void {
     this.projectRquest();
+    console.log(this.url);
   }
 
 
@@ -32,6 +35,6 @@ export class ProjectsComponent implements OnInit {
         console.log(error);
       }
 
-    )
+    );
   }
 }

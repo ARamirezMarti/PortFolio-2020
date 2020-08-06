@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 
-let Schema = new mongoose.Schema;
+let Schema = mongoose.Schema;
 let form = new Schema({
     name:String,
     company:String,
     email:String,
     telephone:Number,
+    message:String
 
 });
 
