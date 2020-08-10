@@ -1,9 +1,9 @@
 
 <div class="divContent">
 
-    <button class="accordion" (click)=showDiv(1) >Section 1</button>
+    <button class="accordion" (click)=showDiv(1) >{{'experience.section1.title' |translate}}</button>
     <div class="panel" *ngIf="isShown1">
-      <p>Contenido seccion 1 </p>
+      <p>{{'experience.section1.content' |translate}} </p>
       
     </div>
     

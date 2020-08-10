@@ -4,10 +4,9 @@
 <div class="frame">
    <img class="photo" src="../assets//leftphoto.jpeg">
    <div class="divLogo"> <img class="logo" src="../assets//icons//logo.png" alt=""> </div>   
-   <div class="lengDiv">
-        
-        <button (click)="useLanguage('en')">English</button>
-        <button (click)="useLanguage('es')">Español</button>
+   <div class="icondiv">        
+        <button (click)="useLanguage('en')"><img src="../assets//icons//en.png" ></button>
+        <button  (click)="useLanguage('es')"><img src="../assets//icons//sp.png" ></button>
     </div>
    <nav class="menu">
 
@@ -54,9 +53,18 @@
         </ul>
        
     </nav>
-    
 
     <div class="container">
+        <div class="icondiv">        
+            <a href='https://github.com/ARamirezMarti'>
+                 <img src="../assets//icons//github.png" >
+            </a>
+    
+            <a href='https://www.linkedin.com/in/antonio-ramirez-marti-00457b120/'>
+                <img src="../assets//icons//likd.png">
+            </a>
+            
+        </div>
 
         <router-outlet></router-outlet>
     

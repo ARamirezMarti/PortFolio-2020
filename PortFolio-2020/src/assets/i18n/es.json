@@ -9,6 +9,34 @@
     "home":{
         "title":"Ey! Soy Tony!",
         "content": " Contanenido muy largo en español"
+    },
+    "skills":{
+        "title1":"Titulos academicos",
+        "title2":"Idiomas",
+        "title3":"Titulos en Udemy",
+        "content1":{
+            "contentTitle": "titulo espa ",
+            "date":"",
+            "content":"ejemplo",
+            "link":"link"
+        }
+    },
+    "experience":{
+        "section1":{
+            "title":" Seccion 1",
+            "content":" contenido de la seccion 1 de experiencia"
+        }
+    },
+
+    "contact":{
+        "name":"Nombre",
+        "comp":"Empresa",
+        "email":"Correo electrónico",
+        "telephone":" Teléfono de contacto",
+        "msg":"Mensaje",
+        "btn":"Enviar"
+
+
     }
 
 

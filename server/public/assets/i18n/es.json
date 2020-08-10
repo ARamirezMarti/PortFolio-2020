@@ -1,0 +1,15 @@
+{
+    "menu":{
+        "home":" Inicio",
+        "skills":" Formación",
+        "experience":"Experiencia",
+        "Projects":"Proyectos",
+        "Contact": "Contacta"
+    },
+    "home":{
+        "title":"Ey! Soy Tony!",
+        "content": " Contanenido muy largo en español"
+    }
+
+
+}

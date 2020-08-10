@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectService} from '../../services/project.service';
 import {Project} from '../../models/project';
+import { URL} from '../../services/global.service';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
-  providers:[ProjectService]
+  providers:[ ProjectService]
 })
 export class ProjectsComponent implements OnInit {
   public projects: Project[];
@@ -14,7 +15,7 @@ export class ProjectsComponent implements OnInit {
 
   constructor( private _projectService:ProjectService) { 
    
-    this.url='http://localhost:3500/api/'
+    this.url = URL;
   }
 
   ngOnInit(): void {
@@ -26,10 +27,7 @@ export class ProjectsComponent implements OnInit {
   projectRquest(){
     this._projectService.getProjects().subscribe(
       response => {
-
         this.projects = response.project;
-        console.log(this.projects);
-
       },
       error =>{
         console.log(error);

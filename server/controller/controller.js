@@ -3,7 +3,7 @@ const Project = require('../model/project');
 const Form = require('../model/form');
 const fs = require('fs');
 const path = require('path');
-const {emailer} = require('./emailer');
+const JWT= require('jsonwebtoken')
 
 var control = {
 
@@ -15,10 +15,9 @@ var control = {
                     if(err){
                         res.status(400).json({
                             err
-                        })
+                        });
                     }
-                   res.status(200).json({
-                       
+                   res.status(200).json({                       
                        project
                    });
 
@@ -29,10 +28,10 @@ var control = {
     postDataProject: (req,res)=>{
         let body = req.body;        
         let image =  req.files.image;
-        let path = `./uploads/${image.name}`;
-        let dateNow = new  Date();
+        let pathImg = path.join(__dirname, `../uploads/${image.name}`);
+        console.log(pathImg);
         
-            image.mv(path,(err)=>{
+            image.mv(pathImg,(err)=>{
                 if(err){res.send(err)}
                 console.log("Photo uploaded");
             })
@@ -65,10 +64,8 @@ var control = {
     getimage: function(req,res){
         // Le pasaremos por parametros el nombre de la imagen
         var file = req.params.image;
-        console.log(file);
         // La concatenamos con el path donde estan
-        var path_file = `./uploads/${file}` 
-        console.log(path_file);
+        var path_file = path.join(__dirname + `../../uploads/${file}`);
         // Verificamos que exista esa imagen
         fs.exists(path_file, (exists)=>{
             if(exists){  
@@ -85,7 +82,6 @@ var control = {
 
     contacForm:function(req,res){
         let body =  req.body;
-        console.log(body);
         let form = new Form({
             name:body.name,
             company:body.company,
@@ -98,7 +94,7 @@ var control = {
             if(err){res.status(400).json({
                 ok:false,
                 err,
-                message:"form no guardado"})
+                message:"Form no guardado"})
             }
            
             res.status(200).json({
@@ -106,11 +102,49 @@ var control = {
                 formSaved,
                 
 
-            })
+            });
+
+        });
+               
+
+    },
+    deleteProject:function (req,res){
+        let id= req.params.id;
+
+        Project.findByIdAndRemove(id,(err,projectRemoved)=>{
+
+            if(err){console.log(err);}
+
+            var path_file = path.join(__dirname + `../../uploads/${projectRemoved.image}`);
+            fs.unlink(path_file,()=>{
+                res.status(200).json({
+                    ok:true,
+                    projectRemoved
+                });
+
+            });
+           
 
         })
-        
-        
+
+    },
+    getToken:function(req,res){
+        let variable = req.params.id;
+        console.log(variable);
+
+        if(variable == process.env.ADMIN_VAR){
+           let token= JWT.sign({data:process.env.ADMIN_VAR},process.env.SEED,{expiresIn: 60*60*60});
+            
+           res.status(200).json({
+            token
+        })
+       
+        }else{
+            res.status(400).json({
+                ok:false,
+            });
+           
+        }
 
     }
 

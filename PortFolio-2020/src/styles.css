@@ -28,19 +28,29 @@ body{
     margin-left: 49%;
 }
 .divLogo img{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 
 }
 
 /* /////////////////// Lenguages ////////////////*/
-.lengDiv{
+.icondiv{
     margin: 0px auto;
     float: right;
     margin-right: 10px;
 }
-.lengDiv button{
-    margin-left: 10px;
+.icondiv button{
+    height: 0px ;
+    margin-left: 5px;
+    border: none;
+}
+.icondiv img{
+    width: 30px;
+    height: 30px;
+}
+.icondiv a{
+    opacity: 0.5;
+    margin-left: 20px;
 }
 
 /* /////////////////// MENU ////////////////*/
@@ -48,7 +58,7 @@ body{
     margin:0px auto;
     float: left;  
     margin-left: 50%;  
-    margin-top: 1rem;
+    margin-top: 1px;
     width: 49%;
     height: auto;
     color: white;
@@ -70,7 +80,8 @@ body{
     font-size:17px;
     margin-right: 3rem;      
     transition: background-color 1.5s;
-    font-family: finger;border-bottom: 1px dashed white;
+    font-family: finger;
+    border-bottom: 1px dashed white;
     
 
 }
@@ -86,7 +97,6 @@ body{
     text-align: center;
     padding: 4px 0;
     border-radius: 6px;   
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;  
     
@@ -99,17 +109,16 @@ body{
 }
 
 /* /////////////////// CONTENEDOR ////////////////*/
-.container{
- 
+.container{ 
     margin: 0px auto;
-    margin-top: 1%;
+    margin-top: 0.2%;
     margin-left: 50%;
     background-color:rgba(3, 3, 3, 0.068);
     float: left;
     width: 48%;
     margin-bottom: 50px;    
     padding-bottom: 3%;
-    box-shadow: 0px 5px 5px 10px  rgba(0, 0, 0, 0.144);
+    box-shadow: 0px 5px 15px 10px  rgba(0, 0, 0, 0.144);
     color: white;
     
 }
@@ -137,7 +146,8 @@ body{
 /* Experience */
 
 .accordion {
-  margin-top: 20px;  
+  margin-top: 20px;
+  margin-left: 20px;  
   color: rgb(17, 17, 17);
   cursor: pointer;
   padding: 10px;
@@ -157,7 +167,8 @@ body{
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  width: 85%;
+  width: 89%;
+  margin-left: 20px;    
   padding: 0 18px;
   background-color:rgba(0, 0, 0, 0.281);
 }
@@ -167,7 +178,7 @@ body{
 
 .form{
     margin-top: 5%;
-    margin-left: 3%;
+    margin-left: 15%;
     width: 40%;
       
     padding:2%;
@@ -178,7 +189,7 @@ body{
     margin-left: 10px;
     margin-right: 15px;
     margin-top: 15px;
-    width:75%;
+    width:80%;
 
 }
 .form button{
@@ -199,10 +210,11 @@ body{
    
 }
 .pass{
-    font-size: 25px;
-    color:red;
+    font-size: 20px;
+    color:white;
     font-family: finger;
     margin-left: 2%;
+    float: right;
 }
 
 
@@ -214,7 +226,6 @@ body{
     width: 45%;
     float: left;
     margin-left:2%;
-    border: 1px solid red;
     
     
 }
@@ -228,7 +239,7 @@ body{
     width: 45%;
     padding-bottom: 1%;    
     padding-left: 3%;
-    border: 1px solid red;
+    border-left: 2px dashed black;
 
 
 
@@ -261,7 +272,7 @@ body{
 
 
 .project{
-    width:75%;
+    width:90%;
     list-style: none;
     display: inline-block;
     text-align: center;
@@ -269,11 +280,12 @@ body{
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 20px;
+
 }
 
 .divImages{
     width: 40%;
-    height: 40%; 
+    height: 50%; 
     overflow: hidden;
     float: left;
 
@@ -281,10 +293,12 @@ body{
 
 .description{
     text-align: left;
+    line-height: 5px;
     margin-left: 2%;
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 20%;
     float: left;
+
     
 }
 

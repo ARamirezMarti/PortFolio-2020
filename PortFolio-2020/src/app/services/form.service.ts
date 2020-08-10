@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { URL } from "./global.service";
 
 
 
@@ -13,7 +14,7 @@ export class FormService{
 
     sendForm(formData): Observable <any>{   
         let fd=JSON.stringify(formData);
-        return this._http.post('http://localhost:3500/api/sendform', fd );
+        return this._http.post(URL + '/sendform', fd );
     }
 
 }

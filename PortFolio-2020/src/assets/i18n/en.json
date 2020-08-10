@@ -10,7 +10,35 @@
     "home":{
         "title":"Ey there! I'm tony!",
         "content": "  INGLES INGLES INGLES INGLES INGLES INGLES"
+    },
+    "skills":{
+        "title1":"Study certificates",
+        "title2":"Lenguages",
+        "title3":"Udemy certificates",
+        "content1":{
+            "contentTitle": "title ingles ",
+            "date":"",
+            "content":"example",
+            "link":"link"
+        }
+
+    },
+
+    "experience":{
+        "section1":{
+            "title":" Section1",
+            "content":" content of section 1"
+        }
+    },
+
+    "contact":{
+        "name":"Name",
+        "comp":"Company",
+        "email":"Contact email",
+        "telephone":" Contact Telephone",
+        "msg":"Message",
+        "btn":"Send"
+
+
     }
-
-
 }

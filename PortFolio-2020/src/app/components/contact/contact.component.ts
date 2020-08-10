@@ -22,6 +22,7 @@ export class ContactComponent implements OnInit {
     this.msg = '';
 
     
+
    }
 
   ngOnInit(): void {
@@ -35,8 +36,7 @@ export class ContactComponent implements OnInit {
     this._formService.sendForm(this.formulario).subscribe(
       response => {
         form.reset();
-        this.msg=" Email sent";
-      console.log(response);
+        this.msg=" Form sent";
       },
       error => {
         console.log(error);

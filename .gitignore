@@ -1,4 +1,6 @@
 PortFolio-2020/node_modules
 server/node_modules
 server/controller/emailer.js
+server/.env
 TODO.TXT
+back
