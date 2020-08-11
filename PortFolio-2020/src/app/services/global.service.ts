@@ -1,3 +1,3 @@
 
- export const URL = 'http://localhost:3500/api';
+ export const URL = `${window.location.origin}/api`;
 

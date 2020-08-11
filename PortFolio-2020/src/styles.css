@@ -176,12 +176,20 @@ body{
 
 /* Contact me*/
 
-.form{
+.formTitle h3{
     margin-top: 5%;
-    margin-left: 15%;
-    width: 40%;
-      
-    padding:2%;
+    padding-left: 30%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.formTitle p{
+    margin-left: 27%;
+    font-size: 15px;
+}
+.form{    
+    margin-left: 25%;
+    width: 50%;      
+    padding:1%;
+    text-align: center;
 }
 
 .form input, label,textarea {
@@ -189,26 +197,16 @@ body{
     margin-left: 10px;
     margin-right: 15px;
     margin-top: 15px;
-    width:80%;
+    width:90%;
 
 }
 .form button{
-    margin-left: 2%;
+    
     margin-top: 5%;
     font-size: large;
 
 }
-.photo2{
-    
-    position: absolute;
-    margin:0px auto;
-    float: right;
-    width: 200px;
-    height: 250px;
-    
-    
-   
-}
+
 .pass{
     font-size: 20px;
     color:white;
@@ -216,6 +214,16 @@ body{
     margin-left: 2%;
     float: right;
 }
+
+.form_error{
+    margin-top: 3px;
+    font-size: 10px;
+    padding:5px;
+    background: rgba(255, 0, 0, 0.9);
+    color: white;
+    border-radius: 10%;
+}
+
 
 
 /* SKILLS */
@@ -251,20 +259,24 @@ body{
     width: 80%; 
     border-radius: 15px; 
     margin-top: 10px;
+    height: 20px;
 }
 .percentBar{
     background-color:rgb(53, 135, 243); 
     color: white; 
-    padding: 1%; 
+    padding: 0.5%; 
     text-align: right; 
-    font-size: 20px; 
+    font-size: 15px; 
     border-radius: 15px; 
     margin-top:10px;
+    height: 18px;
 
 }
 .liCertificates{
     margin-left: 10px;
     font-size: small;
+    line-height: 13px;
+    
 }
 
 
@@ -306,4 +318,16 @@ body{
     float: left;    
     width: 100%;
     height: 100%;
+}
+
+
+/*General for number inputs*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }

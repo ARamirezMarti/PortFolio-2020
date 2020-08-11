@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-
+import {URL} from '../../services/global.service'
 
 @Component({
   selector: 'app-skills',
@@ -12,8 +12,12 @@ export class SkillsComponent implements OnInit {
   public isShown1:boolean;
   public isShown2:boolean;
   public isShown3:boolean;
+  public url;
 
-  constructor() { }
+  constructor() {
+    this.url = URL;
+  }
+  
 
   ngOnInit(): void {
   }

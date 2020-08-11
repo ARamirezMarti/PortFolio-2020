@@ -12,16 +12,34 @@
         "content": "  INGLES INGLES INGLES INGLES INGLES INGLES"
     },
     "skills":{
-        "title1":"Study certificates",
-        "title2":"Lenguages",
-        "title3":"Udemy certificates",
+        "title1":"Titulos academicos",
+        "title2":"Idiomas",
+        "title3":"Titulos en Udemy",
         "content1":{
-            "contentTitle": "title ingles ",
-            "date":"",
-            "content":"example",
+            "contentTitle": "FPGS Automoción",
+            "date":"2011 - 2014",
+            "content":"Instituto Camps Blancs, Sant Boi (Barcelona)",
             "link":"link"
+        },
+        "content2":{
+            "contentTitle": "FPGS Desarrollo de aplicaciones web",
+            "date":"2019 - Actualidad",
+            "content":"Ilerna Online",
+            "link":"link"
+        },
+        
+        "content3":{
+            "contentTitle": "NodeJS: De cero a experto",
+            "date":"2020",
+            "content":"Curso en Udemy donde aprendí NodeJS realizando API REST,Webserver y socket.io",
+            "link":"https://www.udemy.com/certificate/UC-495c8d03-4135-4c56-a3ec-a4c993cf2ee0/"
+        },
+        "content4":{
+            "contentTitle": "Master en Javascript",
+            "date":"2020",
+            "content":"Curso en Udemy donde aprendí desde Javascript basico hasta AngularJs pasando por JQuery,MongoDB,NodeJS y TypeScript",
+            "link":"https://www.udemy.com/certificate/UC-b04565c2-10b3-47bc-a2bf-520d665114cc/"
         }
-
     },
 
     "experience":{
@@ -37,7 +55,7 @@
         "email":"Contact email",
         "telephone":" Contact Telephone",
         "msg":"Message",
-        "btn":"Send"
+        "btn":"Send your message"
 
 
     }

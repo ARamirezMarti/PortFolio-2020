@@ -26,10 +26,9 @@ var control = {
     },
 
     postDataProject: (req,res)=>{
-        let body = req.body;        
+        let body = req.body; 
         let image =  req.files.image;
         let pathImg = path.join(__dirname, `../uploads/${image.name}`);
-        console.log(pathImg);
         
             image.mv(pathImg,(err)=>{
                 if(err){res.send(err)}
@@ -46,13 +45,14 @@ var control = {
 
         project.save((err,projectSaved)=>{
             if(err){
-                res.status(400).json({
+                return res.status(400).json({
                     ok:false,
                     err
                 });
             }
+            
 
-            res.status(201).json({
+           return res.status(201).json({
                 ok:true,                
                 projectSaved
             });
@@ -81,8 +81,12 @@ var control = {
     },
 
     contacForm:function(req,res){
+
         let body =  req.body;
-        let form = new Form({
+        
+       console.log(req.body);
+
+        const form = new Form({
             name:body.name,
             company:body.company,
             email:body.email,
@@ -91,18 +95,18 @@ var control = {
         });
         
         form.save((err,formSaved)=>{
-            if(err){res.status(400).json({
+            if(err){ return res.status(400).json({
                 ok:false,
                 err,
                 message:"Form no guardado"})
+            }else {
+                return res.status(200).json({
+                    ok:true,
+                    formSaved, 
+                    
+                });
             }
            
-            res.status(200).json({
-                ok:true,
-                formSaved,
-                
-
-            });
 
         });
                

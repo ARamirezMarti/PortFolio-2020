@@ -6,12 +6,18 @@ const {verificationToken} = require('../middleware/verification');
 
 
 let router = express.Router();
+// index
+router.get('/', (req, res)=>{
+    
+    res.sendFile(path.resolve(__dirname+'../public/index.html'));
+    
+});
 
 //TOKEN
 router.get('/user/:id',control.getToken);
 
 // Project Routes
-router.get('/getdataprojects',control.getDataProjects);
+router.get('/getdataprojects',verificationToken,control.getDataProjects);
 router.post('/saveproject',control.postDataProject);
 router.get('/getimage/:image',control.getimage);
 router.delete('/deleteproject/:id',verificationToken,control.deleteProject);

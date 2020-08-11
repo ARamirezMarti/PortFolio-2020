@@ -1,26 +1,31 @@
-
+<div class="formTitle">
+    <h3 >Ponte en contacto conmigo</h3>
+    <p >Mandame un mesaje y me pondré en contacto contigo</p>
+    <hr>
+</div>
 <div class="form">
     <form  #formFilled="ngForm" (ngSubmit)="onSubmit(formFilled)">
         <label for="name"> {{'contact.name' | translate}}</label>
-        <input type="text" name="name" [(ngModel)]="formulario.name" placeholder="Name" required>
+        <input type="text" name="name" #name=ngModel [(ngModel)]="formulario.name" placeholder="Name" required>
 
         <label for="company"> {{'contact.comp' | translate}}</label>
-        <input type="text" name="company" placeholder="Company" [(ngModel)]="formulario.company" required>
+        <input type="text" name="company" placeholder="Company"  #company=ngModel [(ngModel)]="formulario.company" required>
 
         <label for="email"> {{'contact.email' | translate}}</label>
-        <input type="text" name="email" placeholder="Email" [(ngModel)]="formulario.email" required >
+        <input type="text" name="email" placeholder="Email" #email=ngModel [(ngModel)]="formulario.email" required >
 
-        <label for="phone"> {{'contact.telephone' | translate}}</label>
-        <input type="text" name="phone" #phone="ngModel" [(ngModel)]="formulario.telephone"  required min="8">
-        
-        
+        <label for="telephone"> {{'contact.telephone' | translate}}</label>
+        <input type="number" name="telephone"  #telephone=ngModel [(ngModel)]="formulario.telephone" minlength="8" required>       
+       
+        <span  class="form_error" *ngIf="telephone.errors && telephone.touched && !telephone.valid && telephone.errors.required" > Introduce un numero de telefono correcto por favor</span>
+
         <label for="message"> {{'contact.msg' | translate}}</label>
-        <textarea type="textarea" name="message" [(ngModel)]="formulario.message"  required></textarea>
+        <textarea type="textarea" name="message" placeholder="message" #message=ngModel [(ngModel)]="formulario.message"  required></textarea>
 
         <button type="submit" [disabled]="!formFilled.valid">
             {{'contact.btn' | translate}}
         </button>
-        <p class="pass" > <strong> {{msg}}</strong></p>
+        
         
     </form>
   

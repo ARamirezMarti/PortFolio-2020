@@ -15,7 +15,8 @@ export class ProjectService{
 
     // [] of projects -> projects.component.ts from backend
     getProjects(): Observable <any>{
-        return this._http.get( URL + '/getdataprojects');
+        console.log(URL);
+        return this._http.get(`${URL}/getdataprojects`);
     }
 
    

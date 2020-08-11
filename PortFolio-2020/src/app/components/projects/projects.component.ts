@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
     this.projectRquest();
-    console.log(this.url);
+    
   }
 
 
