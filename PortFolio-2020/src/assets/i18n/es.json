@@ -7,54 +7,95 @@
         "Contact": "Contacta"
     },
     "home":{
-        "title":"Ey! Soy Tony!",
-        "content": " Contanenido muy largo en español"
+        "title":"¡Hola!   ¡Soy Toni!",
+        "content": "Vivo en Barcelona, España. Anteriormente me dedicaba al sector de la automoción, pero he querido darle un cambio radical a mi vida para ser un futuro programador."
     },
     "skills":{
-        "title1":"Títulos Académicos",
+        "title1":"Formación Académica",
         "title2":"Idiomas",
-        "title3":"Títulos en Udemy",
-        "leng1":"Ingles",
-        "leng2":"Castellano",
-        "leng3":"Catalan",
+        "title3":"Títulos de Udemy",
+        "leng1":"Inglés",
+        "leng2":"Español",
+        "leng3":"Catalán",
         "content1":{
             "contentTitle": "CFGS Automoción",
             "date":"2011 - 2014",
-            "content":"Instituto Camps Blancs, Sant Boi (Barcelona)",
-            "link":"link"
-        },
+            "content":"Instituto Camps Blancs, Sant Boi (Barcelona)"
+            },
         "content2":{
             "contentTitle": "CFGS Desarrollo de Aplicaciones Web",
             "date":"2019 - Actualidad",
-            "content":"Ilerna ",
-            "link":"link"
+            "content":"Ilerna "
         },
 
         "content5":{
-            "contentTitle": "CFGM Electromecánica de vehiculos",
+            "contentTitle": "CFGM Electromecánica de vehículos",
             "date":"2007 - 2009",
-            "content":"Instituto Camps Blancs, Sant Boi (Barcelona)",
-            "link":"link"
+            "content":"Instituto Camps Blancs, Sant Boi (Barcelona)"
         },
         
         "content3":{
             "contentTitle": "NodeJS: De cero a experto",
             "date":"2020",
-            "content":"Curso en Udemy donde aprendí NodeJS realizando API REST,Webserver y socket.io",
-            "link":"https://www.udemy.com/certificate/UC-495c8d03-4135-4c56-a3ec-a4c993cf2ee0/"
+            "content":"Curso en Udemy donde aprendí NodeJS realizando API REST, Webserver y socket.io",
+            "link":"Link al certificado"
+        
         },
         "content4":{
-            "contentTitle": "Master en Javascript",
+            "contentTitle": "Máster en Javascript",
             "date":"2020",
-            "content":"Curso en Udemy donde aprendí desde Javascript basico hasta AngularJs pasando por JQuery,MongoDB,NodeJS y TypeScript",
-            "link":"https://www.udemy.com/certificate/UC-b04565c2-10b3-47bc-a2bf-520d665114cc/"
+            "content":"Curso en Udemy donde aprendí desde Javascript básico hasta AngularJs pasando por JQuery, MongoDB, NodeJS y TypeScript",
+            "link":"Link al certificado"
+
         }
     },
     "experience":{
         "section1":{
-            "title":" Seccion 1",
-            "content":" contenido de la seccion 1 de experiencia"
+            "title":" Graduate High Education Test Area Technician",
+            "company":"Nissan Motor Corporation, Barcelona",
+            "date":"Enero 2019 - Actualmente",
+            "point1":" Coordinar el equipo para llevar a cabo el ensayo del vehículo",
+            "point2":" Gestión de la documentación del laboratorio de emisiones y preparación de documentacion para el ensayo del vehículo",
+            "point3":" Realizar informes mensuales de resultados y del estado del laboratorio",
+            "point4":" Benchmarking con otras centrales internacionales de Nissan",
+            "point5":" Seguimiento de las leyes relacionadas con emisiones"
+        },
+        "section2":{
+            "title":" Operario de producción",
+            "company":"AAM Powertrain, Barcelona",
+            "date":"Agosto 2017 - Noviembre 2018",
+            "point1":" Chorreado y encolado de piezas mecanizadas de automoción para su posterior inyección de plástico",
+            "point2":" Mantenimiento y limpieza de pistolas de pintura y línea de encolado para un funcionamiento óptimo"
+        },
+        "section3":{
+            "title":" Chapista de vehículos",
+            "company":"Kirmac Collision, Vancouver (Canadá)",
+            "date":"Junio 2016 - Abril 2017",
+            "point1":" Desmontaje y montaje de partes movibles de vehículos tales como puertas, parachoques, interiores, etc..",
+            "point2":" Reparación de pequeños bollos",
+            "point3":" Inspección de vehículos colisionados"
+        },
+        "section4":{
+            "title":" Ambassador",
+            "company":"Amazon Logistics UK, Kirkby, (UK)",
+            "date":"Enero 2016 - Abril 2016",
+            "point1":" Formador de nuevos empleados",
+            "point2":" Encargado de hacer funcionar correctamente las líneas de distribución",
+            "point3":" Distribuir los palés por el almacén manualmente y utilizando la maquinaria pertinente",
+            "point4":" Comprobación de productos dañados o perdidos",
+            "point5":" Cargar y almacenar productos para su distribución"
+        },
+        "section5":{
+            "title":"Mozo de almacén ",
+            "company":"Amazon Logistics UK, Saint Helens, (UK)  ",
+            "date":" Agosto 2015 - Enero 2016",
+            "point1":" Almacenaje de productos",
+            "point2":" Limpieza de la zona de trabajo",
+            "point3":" Comprobación de productos dañados o perdidos",
+            "point4":" Cargar y almacenar los productos para su distribución",
+            "point5":" Distribuir los palés por el almacén de forma manual y utilizando la maquinaria pertinente "
         }
+
     },
 
     "contact":{
@@ -63,7 +104,11 @@
         "email":"Correo electrónico",
         "telephone":" Teléfono de contacto",
         "msg":"Mensaje",
-        "btn":"Envia tu mensaje"
+        "btn":"Envía tu mensaje",
+        "title":"Ponte en contacto conmigo",
+        "titleP":"Mándame un mensaje y me pondré en contacto contigo",
+        "error":" Introduce un número de teléfono correcto, por favor"
+
 
 
     }

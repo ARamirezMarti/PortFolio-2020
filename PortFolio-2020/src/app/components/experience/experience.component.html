@@ -3,18 +3,64 @@
 
     <button class="accordion" (click)=showDiv(1) >{{'experience.section1.title' |translate}}</button>
     <div class="panel" *ngIf="isShown1">
-      <p>{{'experience.section1.content' |translate}} </p>
+      <h3>{{'experience.section1.company' |translate}}</h3>
+      <p class="date">{{'experience.section1.date' |translate}}</p>       
+        <ul>
+          <li>{{'experience.section1.point1' |translate}}</li>
+          <li>{{'experience.section1.point2' |translate}}</li>
+          <li>{{'experience.section1.point3' |translate}}</li>
+          <li>{{'experience.section1.point4' |translate}}</li>
+          <li>{{'experience.section1.point5' |translate}}</li>
+        </ul>
+    
       
     </div>
     
-    <button class="accordion" (click)=showDiv(2) >Section 2</button>
+    <button class="accordion" (click)=showDiv(2)> {{'experience.section2.title' |translate}}</button>
     <div class="panel" *ngIf="isShown2">
-      <p> contenido seccion 2</p>
+      <h3>{{'experience.section2.company' |translate}}</h3>
+      <p class="date">{{'experience.section2.date' |translate}}</p>       
+        <ul>
+          <li>{{'experience.section2.point1' |translate}}</li>
+          <li>{{'experience.section2.point2' |translate}}</li>
+        </ul>
     </div>
     
-    <button class="accordion"  (click)=showDiv(3) >Section 3</button>
+    <button class="accordion"  (click)=showDiv(3) >{{'experience.section3.title' |translate}}</button>
     <div class="panel" *ngIf="isShown3">
-      <p>contenido seccion3</p>
+      <h3>{{'experience.section3.company' |translate}}</h3>
+      <p class="date">{{'experience.section3.date' |translate}}</p>       
+        <ul>
+          <li>{{'experience.section3.point1' |translate}}</li>
+          <li>{{'experience.section3.point2' |translate}}</li>
+          <li>{{'experience.section3.point3' |translate}}</li>
+          
+        </ul>
+    </div>
+
+    <button class="accordion"  (click)=showDiv(4) >{{'experience.section4.title' |translate}}</button>
+    <div class="panel" *ngIf="isShown4">
+      <h3>{{'experience.section4.company' |translate}}</h3>
+      <p class="date">{{'experience.section4.date' |translate}}</p>       
+        <ul>
+          <li>{{'experience.section4.point1' |translate}}</li>
+          <li>{{'experience.section4.point2' |translate}}</li>
+          <li>{{'experience.section4.point3' |translate}}</li>
+          <li>{{'experience.section4.point4' |translate}}</li>
+          <li>{{'experience.section4.point5' |translate}}</li>
+        </ul>
+    </div>
+    <button class="accordion"  (click)=showDiv(5) >{{'experience.section5.title' |translate}}</button>
+    <div class="panel" *ngIf="isShown5">
+      <h3>{{'experience.section5.company' |translate}}</h3>
+      <p class="date">{{'experience.section5.date' |translate}}</p>       
+        <ul>
+          <li>{{'experience.section5.point1' |translate}}</li>
+          <li>{{'experience.section5.point2' |translate}}</li>
+          <li>{{'experience.section5.point3' |translate}}</li>
+          <li>{{'experience.section5.point4' |translate}}</li>
+          <li>{{'experience.section5.point5' |translate}}</li>
+        </ul>
     </div>
 
     

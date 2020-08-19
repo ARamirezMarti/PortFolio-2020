@@ -17,8 +17,8 @@ router.get('/', (req, res)=>{
 router.get('/user/:id',control.getToken);
 
 // Project Routes
-router.get('/getdataprojects',verificationToken,control.getDataProjects);
-router.post('/saveproject',control.postDataProject);
+router.get('/getdataprojects',control.getDataProjects);
+router.post('/saveproject',verificationToken,control.postDataProject);
 router.get('/getimage/:image',control.getimage);
 router.delete('/deleteproject/:id',verificationToken,control.deleteProject);
 

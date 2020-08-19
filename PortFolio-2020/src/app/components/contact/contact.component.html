@@ -1,6 +1,6 @@
 <div class="formTitle">
-    <h3 >Ponte en contacto conmigo</h3>
-    <p >Mandame un mesaje y me pondré en contacto contigo</p>
+    <h3 >{{'contact.title' | translate}}</h3>
+    <p >{{'contact.titleP' | translate}}</p>
     <hr>
 </div>
 <div class="form">
@@ -17,7 +17,7 @@
         <label for="telephone"> {{'contact.telephone' | translate}}</label>
         <input type="number" name="telephone"  #telephone=ngModel [(ngModel)]="formulario.telephone" minlength="8" required>       
        
-        <span  class="form_error" *ngIf="telephone.errors && telephone.touched && !telephone.valid && telephone.errors.required" > Introduce un numero de telefono correcto por favor</span>
+        <span  class="form_error" *ngIf="telephone.errors && telephone.touched && !telephone.valid && telephone.errors.required" > {{'contact.error' | translate}}</span>
 
         <label for="message"> {{'contact.msg' | translate}}</label>
         <textarea type="textarea" name="message" placeholder="message" #message=ngModel [(ngModel)]="formulario.message"  required></textarea>

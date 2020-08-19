@@ -8,54 +8,110 @@
         "Contact": "Contact"
     },
     "home":{
-        "title":"Ey there! I'm tony!",
-        "content": "  INGLES INGLES INGLES INGLES INGLES INGLES"
+        "title":"Ey there! I am Tony!",
+        "content": " I live in Barcelona, Spain. Previously, I used to work in the automotive industry , however I decided to do an about-face with my life to become a developer."
     },
+
+
     "skills":{
-        "title1":"Titulos academicos",
-        "title2":"Idiomas",
-        "title3":"Titulos en Udemy",
+        "title1":"Education",
+        "title2":"Languages",
+        "title3":"Udemy Certificates",
+        "leng1":"English",
+        "leng2":"Spanish",
+        "leng3":"Catalan",
         "content1":{
-            "contentTitle": "FPGS Automoción",
+            "contentTitle": "Certificate of Higher Education in Automotive",
             "date":"2011 - 2014",
-            "content":"Instituto Camps Blancs, Sant Boi (Barcelona)",
-            "link":"link"
-        },
+            "content":"Instituto Camps Blancs, Sant Boi (Barcelona)"
+            },
         "content2":{
-            "contentTitle": "FPGS Desarrollo de aplicaciones web",
-            "date":"2019 - Actualidad",
-            "content":"Ilerna Online",
-            "link":"link"
+            "contentTitle": "Certificate of Higher Education in  Web Application Development",
+            "date":"2019 - Present",
+            "content":"Ilerna "
+        },
+
+        "content5":{
+            "contentTitle": "Vocational Education and Training in Motor Vehicle Technician",
+            "date":"2007 - 2009",
+            "content":"Instituto Camps Blancs, Sant Boi (Barcelona)"
         },
         
         "content3":{
             "contentTitle": "NodeJS: De cero a experto",
             "date":"2020",
-            "content":"Curso en Udemy donde aprendí NodeJS realizando API REST,Webserver y socket.io",
-            "link":"https://www.udemy.com/certificate/UC-495c8d03-4135-4c56-a3ec-a4c993cf2ee0/"
+            "content":" Udemy course where I learnt NodeJS doing API REST,Webserver and working with socket.io",
+            "link":"Link to the certificate"
         },
         "content4":{
             "contentTitle": "Master en Javascript",
             "date":"2020",
-            "content":"Curso en Udemy donde aprendí desde Javascript basico hasta AngularJs pasando por JQuery,MongoDB,NodeJS y TypeScript",
-            "link":"https://www.udemy.com/certificate/UC-b04565c2-10b3-47bc-a2bf-520d665114cc/"
+            "content":" Udemy course where I learnt from basic Javascript  to AngularJs going throught JQuery,MongoDB,NodeJS and TypeScript",
+            "link":"Link to the certificate"
         }
     },
 
+
     "experience":{
         "section1":{
-            "title":" Section1",
-            "content":" content of section 1"
+            "title":" Graduate High Education Test Area Technician",
+            "company":"Nissan Motor Corporation, Barcelona",
+            "date":"January 2019 - present",
+            "point1":" Coordinate the team to test the vehicle ",
+            "point2":" Laboratory documentation management and preparation for the vehicle test",
+            "point3":" Monthly reports about test results and laboratory state",
+            "point4":" Benchmarking with others Nissan plants",
+            "point5":" Following the CE laws related with vehicle emission exhaust "
+        },
+        "section2":{
+            "title":" Production operative",
+            "company":"AAM Powertrain, Barcelona",
+            "date":"Augost 2017 - November 2018",
+            "point1":" Blasting and gluing of automotive machined parts for subsequent plastic injection",
+            "point2":"Maintenance and cleaning of the Paint guns and gluing line for an optimal functioning"
+        },
+        "section3":{
+            "title":" Automotive body technician",
+            "company":"Kirmac Collision, Vancouver (Canadá)",
+            "date":"Juny 2016 - April 2017",
+            "point1":"Disassembly and assembly of movable parts of vehicles such as doors, bumpers, interiors…",
+            "point2":"Repair of small dents",
+            "point3":"Inspection of clashed vehicles"
+        },
+        "section4":{
+            "title":" Ambassador",
+            "company":"Amazon Logistics UK, Kirkby, (UK)",
+            "date":"January 2016 - April 2016",
+            "point1":" Trainer of the new employee",
+            "point2":"In charge of the correct operation of the distribution lines",
+            "point3":"Distribute pallets through the warehouse manually and using the relevant machinery",
+            "point4":" Testing of damaged or lost products",
+            "point5":" Load and store products for distribution"
+        },
+        "section5":{
+            "title":" Warehouse Assistant ",
+            "company":"Amazon Logistics UK, Saint Helens, (UK)  ",
+            "date":" August 2015 - January 2016",
+            "point1":" Storage of products",
+            "point2":" Keep the work area clean",
+            "point3":" Testing of damaged or lost products",
+            "point4":" Load and store products for distribution",
+            "point5":" Distribute pallets through the warehouse manually and using the relevant machinery "
         }
+
     },
 
     "contact":{
         "name":"Name",
         "comp":"Company",
-        "email":"Contact email",
-        "telephone":" Contact Telephone",
+        "email":"E-mail",
+        "telephone":" Contact telephone",
         "msg":"Message",
-        "btn":"Send your message"
+        "btn":"Send your message",
+        "title":"Get in touch with me",
+        "titleP":"Send me a massage and I will be in touch ASAP!",
+         "error":" Put a correct telephone number, please"
+
 
 
     }

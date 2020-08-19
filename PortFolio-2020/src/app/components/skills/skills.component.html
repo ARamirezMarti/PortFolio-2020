@@ -1,6 +1,5 @@
 <div >
 
-    <!-- TODO:; study certifications-->
     <div class="list">
         <label  for="studies" [ngStyle]="{'font-size': '20px'}"> <strong>{{ 'skills.title1' | translate }}</strong></label>
         <hr>
@@ -28,10 +27,6 @@
                 </div>
             </li>
 
-
-
-
-
         </div>
     </div>
 
@@ -41,18 +36,17 @@
             <hr>
             <label for="">{{'skills.leng1' |translate}}</label>
             <div class="greyBar">
-                <div class="percentBar" style="width: 60%;">60%</div>
+                <div class="percentBar" style="width: 60%;">{{percent[0]}}</div>
             </div>
             <label for="">{{'skills.leng2' |translate}}</label>
             <div class="greyBar">
-                <div class="percentBar" style="width: 100%;">100%</div>
+                <div class="percentBar" style="width: 100%;">{{percent[1]}}</div>
             </div>
             <label for="">{{'skills.leng3' |translate}}</label>
             <div class="greyBar">
-                <div class="percentBar" style="width: 70%;">70%</div>
+                <div class="percentBar" style="width: 70%;">{{percent[2]}}</div>
             </div>
         
-            <!--TODO: Add udemy certifications list-->
             <label  for="Idiomas" [ngStyle]="{'font-size': '20px'}" > <strong>{{ 'skills.title3' | translate }}</strong></label>
             <hr>
 
@@ -61,7 +55,7 @@
                     <h3>{{ 'skills.content3.contentTitle' | translate }}</h3>
                     <p class="date"> {{ 'skills.content3.date' | translate }}</p>
                     <p>{{ 'skills.content3.content' | translate }}</p>
-                    <a href="{{ url+'/getimage/'+ 'udemynode.jpg' }}">Link to the certificate</a> 
+                    <a href="{{ url+'/getimage/titles'+ 'udemynode.jpg' }}">{{ 'skills.content3.link' | translate }}</a> 
                 </div>
             </li>
             <li class="liCertificates">
@@ -69,7 +63,7 @@
                     <h3>{{ 'skills.content4.contentTitle' | translate }}</h3>
                     <p class="date"> {{ 'skills.content4.date' | translate }}</p>
                     <p>{{ 'skills.content4.content' | translate }}</p>
-                    <a href="{{ url+'/getimage/'+ 'masterjs.jpg' }}"> Link to the certificate</a>
+                    <a href="{{ url+'/getimage/titles'+ 'masterjs.jpg' }}">{{ 'skills.content4.link' | translate }}</a>
                 </div>
             </li>
 

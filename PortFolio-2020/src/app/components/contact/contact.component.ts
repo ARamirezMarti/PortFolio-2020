@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Form} from "../../models/form";
 import { FormService} from '../../services/form.service';
-import { fromEventPattern } from 'rxjs';
-
-
 
 @Component({
   selector: 'app-contact',

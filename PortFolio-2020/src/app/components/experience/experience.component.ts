@@ -10,7 +10,8 @@ export class ExperienceComponent implements OnInit {
   public isShown1:boolean;
   public isShown2:boolean;
   public isShown3:boolean;
-
+  public isShown4:boolean;
+  public isShown5:boolean;
 
   constructor() {    
 
@@ -31,6 +32,12 @@ export class ExperienceComponent implements OnInit {
         break; 
       case 3:
           this.isShown3=!this.isShown3;
+        break;
+        case 4:
+          this.isShown4=!this.isShown4;
+        break;
+        case 5:
+          this.isShown5=!this.isShown5;
         break;
     
       default:

@@ -27,6 +27,7 @@ export class ProjectsComponent implements OnInit {
   projectRquest(){
     this._projectService.getProjects().subscribe(
       response => {
+        
         this.projects = response.project;
       },
       error =>{

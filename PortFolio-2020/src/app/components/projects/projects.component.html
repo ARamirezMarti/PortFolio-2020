@@ -1,13 +1,9 @@
 <div >
     
     <ul >
-        <li *ngFor="let project of projects" class="project">
-            <!--  Añadimos todo  en un link que nos llevara a "/proyecto/:id " --> 
-               <!-- EL div imagen es una mascara, para poder recortar la imagen y que esten todas iguales -->
-              
+        <li *ngFor="let project of projects" class="project">            
                <div class="divImages">
-                <!-- La imagen al final es una url. "getimage " es la URL del back end + la url global + el nombre de la imagen-->
-                <!-- Solo la mostrara, si tiene imagen -->
+               
                 <img src="{{ url+'/getimage/'+project.image }}" *ngIf="project.image">
                 
                
@@ -15,7 +11,7 @@
             <div class="description">
             <h3>{{project.projectName}}</h3>
             <p>{{project.date}}</p>
-            <p>Description:  <p>{{project.description}} <p></p>
+            <p>{{project.description}} <p>
            
             <p> {{project.langs}}</p>
             </div>

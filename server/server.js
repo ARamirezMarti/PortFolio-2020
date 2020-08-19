@@ -7,10 +7,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 
-
-
 let app = express();
-
 
  app.use(cors({
     origin:true,
@@ -28,13 +25,6 @@ app.use('/api',require(path.join(__dirname,'./routes/projects.routes')));
 
 app.use(morgan('dev'));
 
-
-
-
-
-
-
-
 const mongoDeprecation={
     useNewUrlParser:true,
     useUnifiedTopology: true
@@ -45,10 +35,10 @@ mongoose.connect(process.env.MONGO_DB,mongoDeprecation,(err,res)=>{
 
         console.log('Connected to database');
 
-        app.listen(process.env.PORT || 3500,()=>{
-            console.log(`Server listening on port ${process.env.PORT}`);
+        app.listen( 3500,()=>{
+            console.log(`Server listening on port ${3500}`);
         })
-        
+        //process.env.PORT
 
 });
 
