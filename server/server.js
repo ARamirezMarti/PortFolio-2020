@@ -35,8 +35,8 @@ mongoose.connect(process.env.MONGO_DB,mongoDeprecation,(err,res)=>{
 
         console.log('Connected to database');
 
-        app.listen( 3500,()=>{
-            console.log(`Server listening on port ${3500}`);
+        app.listen(process.env.PORT|| 3500,()=>{
+            console.log(`Server listening on port ${process.env.PORT}`);
         })
         //process.env.PORT
 
