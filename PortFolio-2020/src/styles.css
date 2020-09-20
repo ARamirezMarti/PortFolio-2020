@@ -22,11 +22,12 @@ body{
 
 /* /////////////////// LOGO ////////////////*/
 .divLogo{
-    position: absolute;
+    
     margin: 0px auto;
     margin-top: 4px;
     float: left;
-    margin-left: 49%;
+    margin-bottom: 20px;
+
 }
 .divLogo img{
     width: 90px;
@@ -49,10 +50,12 @@ body{
     margin: 0px auto;
     float: right;
     margin-right: 10px;
+    
 }
 .icondiv button{
-    height: 0px ;
+    height: 30px ;
     margin-left: 5px;
+    background-color:rgba(3, 3, 3, 0);
     border: none;
 }
 .icondiv img{
@@ -68,19 +71,20 @@ body{
 .menu{    
     margin:0px auto;
     float: left;  
-    margin-left: 50%;  
+    margin-left: 55%;  
     margin-top: 1px;
-    width: 49%;
-    height: auto;
+    width: 40%;
+    
     color: white;
-    text-align: center;
+    
 
 }
 .menu ul{
     
     display: inline-block;
-    width: 100% auto;
-    text-align: center;
+    margin: 0px auto;
+    margin-top:50px;       
+    padding-left: 2%; 
     
 }
 
@@ -89,11 +93,10 @@ body{
     float: left;
     display: inline;     
     font-size:17px;
-    margin-right: 3rem;      
+    margin-right: 2.5rem;      
     transition: background-color 1.5s;
-    font-family: finger;
+   
     border-bottom: 1px dashed white;
-    
 
 }
 .menu li img{
@@ -138,7 +141,7 @@ body{
     margin-left: 20px;
     margin-top: 20px;
     color:rgb(53, 135, 243);
-    font-family: bold;
+    font-family: Helvetica;
     font-size: 50px;
     
 }
@@ -146,7 +149,7 @@ body{
     margin-left: 15px;
     margin-right: 25px;  
     
-    font-family: finger;
+    font-family: Helvetica;
     font-size: medium;  
 }
 .divContent button{
@@ -204,7 +207,7 @@ body{
 .formTitle h3{
     margin-top: 5%;
     padding-left: 30%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Helvetica;
 }
 .formTitle p{
     margin-left: 27%;
@@ -235,7 +238,7 @@ body{
 .pass{
     font-size: 20px;
     color:white;
-    font-family: finger;
+    font-family: Helvetica;
     margin-left: 2%;
     float: right;
 }
@@ -265,15 +268,14 @@ body{
 
 .progresBars{
     margin:0px auto;
-    margin-top: 3%;
+    text-align: left;
     float: right;
     margin-right: 2%;
     border-left: 5px dashed black;
     width: 45%;
     padding-bottom: 1%;    
-    padding-left: 3%;
+    padding-left: 2%;
     border-left: 2px dashed black;
-
 
 
 }
@@ -301,8 +303,13 @@ body{
     margin-left: 10px;
     font-size: small;
     line-height: 13px;
+    list-style-type: none;
     
 }
+.liCertificates h3{
+    text-decoration: underline  ;
+}
+
 
 
 /*  PROJECTS */

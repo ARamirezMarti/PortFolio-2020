@@ -10,7 +10,7 @@ export class AppComponent {
   public links:Array<string>;
 
   constructor(private translate: TranslateService){
-    translate.setDefaultLang('es');
+    translate.setDefaultLang('en');
     this.links=['https://github.com/ARamirezMarti','https://www.linkedin.com/in/antonio-ramirez-marti-00457b120/']
 
   }

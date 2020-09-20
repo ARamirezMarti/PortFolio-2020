@@ -29,16 +29,16 @@ const mongoDeprecation={
     useNewUrlParser:true,
     useUnifiedTopology: true
 }
-
+//process.env.MONGO_DB
 mongoose.connect(process.env.MONGO_DB,mongoDeprecation,(err,res)=>{
         if(err) throw err;
 
         console.log('Connected to database');
 
         app.listen(process.env.PORT|| 3500,()=>{
-            console.log(`Server listening on port ${process.env.PORT}`);
+            console.log(`Server listening on port ${process.env.PORT || 3500}`);
         })
-        //process.env.PORT
+        
 
 });
 

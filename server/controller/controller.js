@@ -3,7 +3,8 @@ const Project = require('../model/project');
 const Form = require('../model/form');
 const fs = require('fs');
 const path = require('path');
-const JWT= require('jsonwebtoken')
+const JWT= require('jsonwebtoken');
+const {emailer}=require('./emailer');
 
 var control = {
 
@@ -85,7 +86,7 @@ var control = {
         let body =  req.body;
         
        console.log(req.body);
-
+        emailer(body);
         const form = new Form({
             name:body.name,
             company:body.company,
