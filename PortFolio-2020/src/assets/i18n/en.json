@@ -48,6 +48,12 @@
             "date":"2020",
             "content":" Udemy course where I learnt from basic Javascript  to AngularJs going throught JQuery,MongoDB,NodeJS and TypeScript",
             "link":"Link to the certificate"
+        },
+        "content6":{
+            "contentTitle": "JS Understanding weird parts",
+            "date":"2020",
+            "content":" Udemy course where I learnt  Javascript in deepth ",
+            "link":"Link to the certificate"
         }
     },
 

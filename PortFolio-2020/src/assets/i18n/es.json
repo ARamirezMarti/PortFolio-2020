@@ -47,6 +47,12 @@
             "content":"Curso en Udemy donde aprendí desde Javascript básico hasta AngularJs pasando por JQuery, MongoDB, NodeJS y TypeScript",
             "link":"Link al certificado"
 
+        },
+        "content6":{
+            "contentTitle": "JS Understanding weird parts",
+            "date":"2020",
+            "content":"Curso en Udemy donde aprendí Javascript en produndidad ",
+            "link":"Link to the certificate"
         }
     },
     "experience":{
